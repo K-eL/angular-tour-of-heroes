@@ -22,10 +22,10 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero){
+  /* onSelect(hero: Hero){
     this.selectedHero = hero;
     this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
+  } */
 
   getHeroes(){
     this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
